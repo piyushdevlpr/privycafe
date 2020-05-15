@@ -35,6 +35,10 @@ app.use(cors(corsOptions)) ;
 app.use(bodyParser.urlencoded({ limit: "50mb",extended: true }));
 app.use(bodyParser.json({ limit: "50mb",extended: true }));
 
+app.get("/",function(req,res){
+  res.write("hi ! There")
+})
+
 app.post("/create-user",function(req,res){
   if(req.body.email){
     User.find({email:req.body.email},function(err,m){
