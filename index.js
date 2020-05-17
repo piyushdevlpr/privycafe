@@ -18,7 +18,7 @@ mongoose.connect(uri,{useNewUrlParser: true, useUnifiedTopology: true, useFindAn
   .catch((err) => console.error(err));
 
 var whitelist2 = [] ;
-whitelist2 = ['http://privycafe.s3-ap-southeast-1.amazonaws.com','http://dmo1c7ii6uvvo.cloudfront.net']
+whitelist2 = ['http://privycafe.s3-ap-southeast-1.amazonaws.com','http://dmo1c7ii6uvvo.cloudfront.net','http://www.privycafe.com','https://www.privycafe.com','https//privycafe.com']
 var corsOptions = {
   credentials:true,                           //using credentials from frontend aftr authentication
   origin: function (origin, callback) {
